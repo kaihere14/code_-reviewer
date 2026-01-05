@@ -3,7 +3,7 @@ import { Routes,Route} from 'react-router-dom'
 
 import Result from './pages/Result'
 import Login from './pages/Login'
-import AuthLoading from './pages/authLoading'
+import AuthLoading from './pages/AuthLoading'
 import Welcome from './pages/Welcome'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
