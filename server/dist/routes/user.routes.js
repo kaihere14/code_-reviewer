@@ -5,4 +5,3 @@ const router = Router();
 router.get("/verify", verifyJwt, verifyUser);
 router.post("/logout", logoutUser);
 export default router;
-//# sourceMappingURL=user.routes.js.map

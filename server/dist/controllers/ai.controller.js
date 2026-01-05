@@ -93,4 +93,3 @@ export const generateAIContent = async (req, res) => {
         });
     }
 };
-//# sourceMappingURL=ai.controller.js.map

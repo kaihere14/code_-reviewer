@@ -25,4 +25,3 @@ export const logoutUser = (req, res) => {
     res.clearCookie("accessToken");
     res.status(200).json({ message: "User logged out successfully" });
 };
-//# sourceMappingURL=user.controller.js.map

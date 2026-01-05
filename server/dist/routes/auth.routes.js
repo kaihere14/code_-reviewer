@@ -4,4 +4,3 @@ const router = Router();
 router.get("/redirect", googleAuthRedirect);
 router.get("/callback", googleAuthCallback);
 export default router;
-//# sourceMappingURL=auth.routes.js.map

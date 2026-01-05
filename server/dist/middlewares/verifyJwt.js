@@ -13,4 +13,3 @@ export const verifyJwt = (req, res, next) => {
         return res.status(401).json({ message: "Invalid token", error });
     }
 };
-//# sourceMappingURL=verifyJwt.js.map

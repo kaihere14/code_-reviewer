@@ -15,4 +15,3 @@ const connectDB = async () => {
     }
 };
 export { prisma, connectDB };
-//# sourceMappingURL=connectDb.js.map
