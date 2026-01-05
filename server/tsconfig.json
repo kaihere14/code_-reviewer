@@ -10,7 +10,6 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": ["node"],
     // For nodejs:
     "lib": ["esnext"],
     
@@ -40,7 +39,8 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": ["src/**/*"],
   "exclude": ["prisma.config.ts", "prisma/**", "generated/**", "dist/**", "node_modules/**"]
