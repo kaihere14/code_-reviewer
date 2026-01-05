@@ -5,6 +5,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
+    
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
@@ -38,5 +39,7 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["prisma.config.ts", "prisma/**", "generated/**", "dist/**", "node_modules/**"]
 }

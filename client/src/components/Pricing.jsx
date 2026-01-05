@@ -42,9 +42,9 @@ const Pricing = () => {
   ];
 
   return (
-    <div id="price" className="min-h-screen w-full  text-white py-20 px-8 relative overflow-hidden">
+    <div id="price" className="min-h-screen w-full  text-white pt-10 md:py-20 px-8 relative overflow-hidden">
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto mb-20">
+      <div className="max-w-7xl mx-auto mb-10 md:mb-20">
         <div className="flex justify-between items-start">
           <div>
             <div className="inline-block mb-4 px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-400/10">
@@ -52,12 +52,12 @@ const Pricing = () => {
                 Coming Soon
               </span>
             </div>
-            <h1 className="text-7xl font-light mb-4">
+            <h1 className="text-4xl md:text-7xl font-light mb-4">
               Choose your <br />
               <span className="italic font-serif">best plan</span>
             </h1>
           </div>
-          <div className="text-right max-w-md">
+          <div className=" hidden md:flex  text-right max-w-md ">
             <p className="text-zinc-400 text-lg leading-relaxed">
               Fair terms for individuals, teams, and
               <br />
@@ -68,7 +68,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 md:px-4">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}

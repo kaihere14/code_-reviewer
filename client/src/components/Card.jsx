@@ -25,7 +25,7 @@ const Card = () => {
 
   return (
     <div className="p-8 ">
-      <div className="pt-16 flex gap-8 px-12 flex-wrap justify-center ">
+      <div className="md:pt-16 flex gap-8 px-12 flex-wrap justify-center ">
         {cardDetails.map((card, index) => (
           <div
             key={index}
