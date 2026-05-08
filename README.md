@@ -1,3 +1,4 @@
+
 # Code Reviewer
 A comprehensive code review platform built with React, Express, and Prisma.
 
@@ -6,16 +7,16 @@ A comprehensive code review platform built with React, Express, and Prisma.
 [![Coverage Status](https://img.shields.io/coverallsCoverage/github/kaihere14/code-reviewer?style=flat-square)](https://coveralls.io/github/kaihere14/code-reviewer)
 [![License](https://img.shields.io/github/license/kaihere14/code-reviewer?style=flat-square)](https://github.com/kaihere14/code-reviewer/blob/master/LICENSE)
 
-## Overview
-Code Reviewer is a web application designed to facilitate code reviews and improve code quality. It provides a platform for developers to share their code, receive feedback, and learn from others.
+## 🔍 Overview
 
-## Features
-* **Code Review**: Create and manage code reviews with ease
-* **Real-time Feedback**: Receive instant feedback from peers and mentors
-* **Version Control**: Integrate with popular version control systems like Git
-* **Collaboration**: Invite team members to review and discuss code
-* **Customizable**: Configure the platform to fit your team's needs
+Code Reviewer is a full-stack web application designed to streamline the code review process and enhance code quality. By leveraging a modern architecture with React on the frontend and Express with Prisma on the backend, it provides a robust platform for developers to share code snippets, receive structured feedback, and collaborate effectively within a type-safe environment.
+## ✨ Features
 
+*   **Code Review Management**: Easily create, update, and track code review submissions.
+*   **Modern UI/UX**: A responsive interface built with React, styled with CSS, and enhanced with Framer Motion animations.
+*   **Global State Management**: Utilizes Zustand for lightweight and efficient client-side state handling.
+*   **Type-Safe Database Access**: Integrated with Prisma ORM and PostgreSQL for reliable data persistence and schema management.
+*   **Real-time Feedback Ready**: Architecture designed to support instant peer-to-peer feedback and discussions.
 ## Tech Stack
 * **Frontend**: React, React Router, Zustand
 * **Backend**: Express, Prisma, PostgreSQL
@@ -56,13 +57,15 @@ The project is organized into the following directories:
 ### Configuration
 The application uses environment variables to configure the database and other settings. Update the `prisma/.env` file with your database credentials and other settings.
 
-## Usage
-1. Create a new code review: `POST /api/reviews`
-2. Get a list of code reviews: `GET /api/reviews`
-3. Get a code review by ID: `GET /api/reviews/:id`
-4. Update a code review: `PATCH /api/reviews/:id`
-5. Delete a code review: `DELETE /api/reviews/:id`
+## 🚀 Usage
 
+The platform can be utilized through the web interface or by interacting directly with the backend API:
+
+1.  **Submit Code**: Create a new review request by providing a title, description, and the code snippet via `POST /api/reviews`.
+2.  **Review Feed**: Browse all active code reviews using `GET /api/reviews`.
+3.  **Detailed View**: Inspect specific code submissions and their metadata via `GET /api/reviews/:id`.
+4.  **Iterate**: Update existing reviews with new code or descriptions using `PATCH /api/reviews/:id`.
+5.  **Cleanup**: Remove completed or obsolete reviews using `DELETE /api/reviews/:id`.
 ## Development
 ### Setting up the development environment
 1. Install dependencies: `npm install`
@@ -79,25 +82,32 @@ The application uses environment variables to configure the database and other s
 2. Build the server: `npm run build`
 3. Deploy the client and server to a production environment
 
-## API Documentation
+## 📖 API Documentation
+
 ### Endpoints
-* `POST /api/reviews`: Create a new code review
-* `GET /api/reviews`: Get a list of code reviews
-* `GET /api/reviews/:id`: Get a code review by ID
-* `PATCH /api/reviews/:id`: Update a code review
-* `DELETE /api/reviews/:id`: Delete a code review
+
+*   `POST /api/reviews`: Create a new code review entry.
+*   `GET /api/reviews`: Fetch a list of all available code reviews.
+*   `GET /api/reviews/:id`: Retrieve detailed information for a specific review.
+*   `PATCH /api/reviews/:id`: Update the title, description, or code of an existing review.
+*   `DELETE /api/reviews/:id`: Permanently remove a code review.
 
 ### Request Body
-* `title`: The title of the code review
-* `description`: The description of the code review
-* `code`: The code to be reviewed
 
-### Response
-* `id`: The ID of the code review
-* `title`: The title of the code review
-* `description`: The description of the code review
-* `code`: The code to be reviewed
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `title` | String | The title of the code review |
+| `description` | String | Detailed context or instructions for reviewers |
+| `code` | String | The actual source code to be reviewed |
 
+### Response Object
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `id` | String/Int | Unique identifier generated by the database |
+| `title` | String | The title of the review |
+| `description` | String | The provided description |
+| `code` | String | The submitted code snippet |
 ## Contributing
 Contributions are welcome! Please submit a pull request with your changes and a brief description of what you've changed.
 
